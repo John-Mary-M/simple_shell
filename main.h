@@ -8,7 +8,8 @@
 #include <string.h>
 #include <sys/wait.h>
 
-#define MAX_COMAND_LENGTH 1024;
+#define MAX_COMMAND_LENGTH 1024
+void run_command(char *command);
 /*int child_pid(char *command);*/
 /*char _readline(int *incommand);*/
 
