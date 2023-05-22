@@ -25,7 +25,7 @@ int main(void)
 			continue;
 		if (strcmp(command, "exit") == 0)
 			break;
-		run_command(command);
+		run_command_with_args(command);
 	}
 	return (0);
 }
