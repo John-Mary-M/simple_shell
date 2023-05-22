@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 
 #define MAX_COMMAND_LENGTH 1024
+#define MAX_ARGUMENTS 1024
 void run_command(char *command);
 void run_command_with_args(char *command); 
 /*int child_pid(char *command);*/
