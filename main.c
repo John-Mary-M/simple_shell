@@ -11,7 +11,7 @@ int main(void)
 
 	while (1)
 	{
-		write(1, "Cisfun ", 8);
+		write(1, "Cisfun$ ", 9);
 
 		if (fgets(command, MAX_COMMAND_LENGTH, stdin) == NULL)
 		{
