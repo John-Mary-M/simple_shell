@@ -55,7 +55,6 @@ int error_sep_op(char *input, int i, char last)
 	{
 		if (last == ';' || last == '|')
 			return (i);
-
 		if (last == '&')
 		{
 			count = repeated_char(input, 0);
@@ -63,7 +62,6 @@ int error_sep_op(char *input, int i, char last)
 				return (i);
 		}
 	}
-
 	return (error_sep_op(input + 1, i + 1, *input));
 }
 
@@ -128,7 +126,6 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 		free(counter);
 		return;
 	}
-
 	_strcpy(error, datash->av[0]);
 	_strcat(error, ": ");
 	_strcat(error, counter);
@@ -136,7 +133,6 @@ void print_syntax_error(data_shell *datash, char *input, int i, int bool)
 	_strcat(error, msg);
 	_strcat(error, msg3);
 	_strcat(error, "\0");
-
 
 	write(STDERR_FILENO, error, length);
 	free(error);
